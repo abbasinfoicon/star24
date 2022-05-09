@@ -1,0 +1,206 @@
+/*========================================================================================================
+================================ Header Scss ===================================================================
+===========================================================================================================*/
+header {
+  @include full-width;
+  padding: 38px 0;
+}
+
+//container-fluid
+.container-fluid {
+  @include mq(min, 1500) {
+    width: 1500px;
+  }
+}
+
+//logo-menu
+.logo-menu {
+}
+
+//logo
+.logo {
+  a {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $txtcolor;
+    font-family: 'Myriad Pro Bold';
+    background: $lgray;
+    padding: 25px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+//menu
+.menu {
+  margin-left: 130px;
+
+  @include mq(max, 767){
+    margin-left: 0;
+  }
+
+  ul {
+    @include mq(max, 767){
+      text-align: center;
+    }
+
+    li {
+      display: inline-block;
+      margin: 16px 15px;
+
+      @include mq(max, 767){
+        display: block;
+      }
+
+      a {
+        font-size: 16px;
+        color: $txtcolor;
+        font-family: 'SF UI Display Medium';
+
+        &:hover {
+          color: $black;
+        }
+
+      }
+
+      &.active {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+/*========================================================================================================
+================================ Header Scss ===================================================================
+===========================================================================================================*/
+
+footer {
+  @include full-width;
+}
+
+
+//footer-top
+.footer-top {
+}
+
+//footer-logo
+.footer-logo {
+  max-width: 250px;
+
+  @include mq(max, 767){
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .logo {
+    height: 40px;
+    background: #f9f9f9;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #969595;
+    font-family: 'Myriad Pro Regular';
+    margin-bottom: 35px;
+
+    @include mq(max, 767){
+      margin-bottom: 15px;
+    }
+  }
+
+  //social-icon
+  .social-icon {
+    li {
+      display: inline-block;
+      margin: 8px 6px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      a {
+        color: #4a4a4a;
+
+        &:hover {
+          color: $black;
+        }
+
+        i.fa {
+        }
+      }
+    }
+  }
+}
+
+
+//footer-menu
+.footer-menu {
+  .fmenu {
+    h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #4a4a4a;
+      font-family: 'SF UI Display Medium';
+      margin-bottom: 40px;
+    }
+
+    ul {
+      li {
+        a {
+          font-size: 14px;
+          color: #969696;
+          font-family: 'SF UI Display Light';
+          margin-bottom: 25px;
+          display: block;
+
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+
+//footer-bottom
+.footer-bottom {
+  margin-bottom: 50px;
+}
+
+//copyright
+.copyright {
+  @include mq(max, 767) {
+    text-align: center;
+  }
+
+  p {
+    font-family: 'SF UI Display Medium';
+    font-size: 13px;
+    color: #4a4a4a;
+  }
+}
+
+
+.links-bottom {
+  ul {
+    @include mq(max, 767) {
+      text-align: center;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 12px;
+
+      a {
+        font-family: 'SF UI Display Medium';
+        font-size: 13px;
+        color: #4a4a4a;
+      }
+    }
+  }
+}
